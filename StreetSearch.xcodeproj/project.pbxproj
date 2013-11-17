@@ -23,6 +23,8 @@
 		756E9B0A1839404C000D19AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 756E9B081839404C000D19AE /* InfoPlist.strings */; };
 		756E9B0C1839404C000D19AE /* StreetSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E9B0B1839404C000D19AE /* StreetSearchTests.m */; };
 		756E9B181839444B000D19AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756E9B171839444B000D19AE /* Storyboard.storyboard */; };
+		756E9B1B183947EA000D19AE /* STSStreetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E9B1A183947EA000D19AE /* STSStreetTableViewController.m */; };
+		75FCE4521839548700145DC8 /* STSStreet.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FCE4511839548700145DC8 /* STSStreet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		756E9B091839404C000D19AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		756E9B0B1839404C000D19AE /* StreetSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetSearchTests.m; sourceTree = "<group>"; };
 		756E9B171839444B000D19AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		756E9B19183947EA000D19AE /* STSStreetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSStreetTableViewController.h; sourceTree = "<group>"; };
+		756E9B1A183947EA000D19AE /* STSStreetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSStreetTableViewController.m; sourceTree = "<group>"; };
+		75FCE4501839548700145DC8 /* STSStreet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSStreet.h; sourceTree = "<group>"; };
+		75FCE4511839548700145DC8 /* STSStreet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSStreet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +127,12 @@
 				756E9AF21839404B000D19AE /* STSAppDelegate.m */,
 				756E9AF71839404B000D19AE /* Images.xcassets */,
 				756E9AF41839404B000D19AE /* StreetSearch.xcdatamodeld */,
+				75FCE4501839548700145DC8 /* STSStreet.h */,
+				75FCE4511839548700145DC8 /* STSStreet.m */,
 				756E9AE91839404B000D19AE /* Supporting Files */,
 				756E9B171839444B000D19AE /* Storyboard.storyboard */,
+				756E9B19183947EA000D19AE /* STSStreetTableViewController.h */,
+				756E9B1A183947EA000D19AE /* STSStreetTableViewController.m */,
 			);
 			path = StreetSearch;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				756E9AEF1839404B000D19AE /* main.m in Sources */,
+				756E9B1B183947EA000D19AE /* STSStreetTableViewController.m in Sources */,
+				75FCE4521839548700145DC8 /* STSStreet.m in Sources */,
 				756E9AF31839404B000D19AE /* STSAppDelegate.m in Sources */,
 				756E9AF61839404B000D19AE /* StreetSearch.xcdatamodeld in Sources */,
 			);
@@ -456,6 +468,7 @@
 				756E9B111839404C000D19AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		756E9B121839404C000D19AE /* Build configuration list for PBXNativeTarget "StreetSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +477,7 @@
 				756E9B141839404C000D19AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
