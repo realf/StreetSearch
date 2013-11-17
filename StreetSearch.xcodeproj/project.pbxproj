@@ -22,6 +22,7 @@
 		756E9B021839404C000D19AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E9AE61839404B000D19AE /* CoreData.framework */; };
 		756E9B0A1839404C000D19AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 756E9B081839404C000D19AE /* InfoPlist.strings */; };
 		756E9B0C1839404C000D19AE /* StreetSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E9B0B1839404C000D19AE /* StreetSearchTests.m */; };
+		756E9B181839444B000D19AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756E9B171839444B000D19AE /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		756E9B071839404C000D19AE /* StreetSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StreetSearchTests-Info.plist"; sourceTree = "<group>"; };
 		756E9B091839404C000D19AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		756E9B0B1839404C000D19AE /* StreetSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetSearchTests.m; sourceTree = "<group>"; };
+		756E9B171839444B000D19AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				756E9AF71839404B000D19AE /* Images.xcassets */,
 				756E9AF41839404B000D19AE /* StreetSearch.xcdatamodeld */,
 				756E9AE91839404B000D19AE /* Supporting Files */,
+				756E9B171839444B000D19AE /* Storyboard.storyboard */,
 			);
 			path = StreetSearch;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756E9AED1839404B000D19AE /* InfoPlist.strings in Resources */,
+				756E9B181839444B000D19AE /* Storyboard.storyboard in Resources */,
 				756E9AF81839404B000D19AE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
