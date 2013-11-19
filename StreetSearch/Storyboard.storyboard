@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RRs-6p-fqa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pjn-ih-05p">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Street Table View Controller-->
+        <!--Street Table View Controller - Streets-->
         <scene sceneID="f3I-75-wYk">
             <objects>
                 <tableViewController id="RRs-6p-fqa" customClass="STSStreetTableViewController" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="R1M-30-ggh">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R1M-30-ggh" id="CfP-I5-6UG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -27,8 +27,27 @@
                             <outlet property="delegate" destination="RRs-6p-fqa" id="aXZ-gp-hPm"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Streets" id="na7-m6-mwm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woO-9O-OeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="-32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uke-oM-uRK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pjn-ih-05p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d6L-7q-mFT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RRs-6p-fqa" kind="relationship" relationship="rootViewController" id="8VQ-st-mXH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGE-HA-P31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3" y="-32"/>
         </scene>

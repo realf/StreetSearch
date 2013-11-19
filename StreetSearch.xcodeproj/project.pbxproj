@@ -28,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7541FE4C183C1B8C00E97FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7541FE48183C1B8B00E97FF7 /* StreetImporter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7541FE32183C1B2B00E97FF7;
+			remoteInfo = StreetImporter;
+		};
 		756E9B031839404C000D19AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 756E9AD51839404B000D19AE /* Project object */;
@@ -38,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7541FE48183C1B8B00E97FF7 /* StreetImporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StreetImporter.xcodeproj; path = StreetImporter/StreetImporter.xcodeproj; sourceTree = "<group>"; };
 		756E9ADD1839404B000D19AE /* StreetSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756E9AE01839404B000D19AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		756E9AE21839404B000D19AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,9 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7541FE49183C1B8B00E97FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7541FE4D183C1B8C00E97FF7 /* StreetImporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		756E9AD41839404B000D19AE = {
 			isa = PBXGroup;
 			children = (
+				7541FE48183C1B8B00E97FF7 /* StreetImporter.xcodeproj */,
 				756E9AE81839404B000D19AE /* StreetSearch */,
 				756E9B051839404C000D19AE /* StreetSearchTests */,
 				756E9ADF1839404B000D19AE /* Frameworks */,
@@ -125,14 +142,14 @@
 			children = (
 				756E9AF11839404B000D19AE /* STSAppDelegate.h */,
 				756E9AF21839404B000D19AE /* STSAppDelegate.m */,
-				756E9AF71839404B000D19AE /* Images.xcassets */,
-				756E9AF41839404B000D19AE /* StreetSearch.xcdatamodeld */,
-				75FCE4501839548700145DC8 /* STSStreet.h */,
-				75FCE4511839548700145DC8 /* STSStreet.m */,
-				756E9AE91839404B000D19AE /* Supporting Files */,
-				756E9B171839444B000D19AE /* Storyboard.storyboard */,
 				756E9B19183947EA000D19AE /* STSStreetTableViewController.h */,
 				756E9B1A183947EA000D19AE /* STSStreetTableViewController.m */,
+				75FCE4501839548700145DC8 /* STSStreet.h */,
+				75FCE4511839548700145DC8 /* STSStreet.m */,
+				756E9AF71839404B000D19AE /* Images.xcassets */,
+				756E9B171839444B000D19AE /* Storyboard.storyboard */,
+				756E9AF41839404B000D19AE /* StreetSearch.xcdatamodeld */,
+				756E9AE91839404B000D19AE /* Supporting Files */,
 			);
 			path = StreetSearch;
 			sourceTree = "<group>";
@@ -229,6 +246,12 @@
 			mainGroup = 756E9AD41839404B000D19AE;
 			productRefGroup = 756E9ADE1839404B000D19AE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7541FE49183C1B8B00E97FF7 /* Products */;
+					ProjectRef = 7541FE48183C1B8B00E97FF7 /* StreetImporter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				756E9ADC1839404B000D19AE /* StreetSearch */,
@@ -236,6 +259,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7541FE4D183C1B8C00E97FF7 /* StreetImporter */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = StreetImporter;
+			remoteRef = 7541FE4C183C1B8C00E97FF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		756E9ADB1839404B000D19AE /* Resources */ = {
