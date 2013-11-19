@@ -22,11 +22,6 @@
     STSStreetTableViewController *streetTableViewController = [navController viewControllers][0];
     streetTableViewController.managedObjectContext = self.managedObjectContext;
     
-    NSManagedObjectContext *context = self.managedObjectContext;
-    STSStreet *street = [NSEntityDescription insertNewObjectForEntityForName:@"STSStreet" inManagedObjectContext:context];
-    street.streetName = @"a name";
-    [context insertObject:street];
-    
     return YES;
 }
 

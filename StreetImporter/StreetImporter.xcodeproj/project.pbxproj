@@ -11,6 +11,7 @@
 		7541FE38183C1B2B00E97FF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7541FE37183C1B2B00E97FF7 /* Foundation.framework */; };
 		7541FE3B183C1B2B00E97FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7541FE3A183C1B2B00E97FF7 /* main.m */; };
 		7541FE42183C1B2B00E97FF7 /* StreetImporter.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7541FE41183C1B2B00E97FF7 /* StreetImporter.1 */; };
+		7541FE58183C21CE00E97FF7 /* StreetSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7541FE56183C21CE00E97FF7 /* StreetSearch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,9 @@
 		7541FE3A183C1B2B00E97FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7541FE3D183C1B2B00E97FF7 /* StreetImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreetImporter-Prefix.pch"; sourceTree = "<group>"; };
 		7541FE41183C1B2B00E97FF7 /* StreetImporter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = StreetImporter.1; sourceTree = "<group>"; };
+		7541FE52183C1FD400E97FF7 /* STSStreet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = STSStreet.h; path = ../../StreetSearch/STSStreet.h; sourceTree = "<group>"; };
+		7541FE53183C1FD400E97FF7 /* STSStreet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = STSStreet.m; path = ../../StreetSearch/STSStreet.m; sourceTree = "<group>"; };
+		7541FE57183C21CE00E97FF7 /* StreetSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StreetSearch.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,9 @@
 		7541FE39183C1B2B00E97FF7 /* StreetImporter */ = {
 			isa = PBXGroup;
 			children = (
+				7541FE52183C1FD400E97FF7 /* STSStreet.h */,
+				7541FE56183C21CE00E97FF7 /* StreetSearch.xcdatamodeld */,
+				7541FE53183C1FD400E97FF7 /* STSStreet.m */,
 				7541FE3A183C1B2B00E97FF7 /* main.m */,
 				7541FE41183C1B2B00E97FF7 /* StreetImporter.1 */,
 				7541FE3C183C1B2B00E97FF7 /* Supporting Files */,
@@ -143,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7541FE58183C21CE00E97FF7 /* StreetSearch.xcdatamodeld in Sources */,
 				7541FE3B183C1B2B00E97FF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +266,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7541FE56183C21CE00E97FF7 /* StreetSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7541FE57183C21CE00E97FF7 /* StreetSearch.xcdatamodel */,
+			);
+			currentVersion = 7541FE57183C21CE00E97FF7 /* StreetSearch.xcdatamodel */;
+			path = StreetSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7541FE2A183C1B2B00E97FF7 /* Project object */;
 }

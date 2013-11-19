@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Zen Carrot. All rights reserved.
 //
 
+#import "STSStreet.h"
+
 static NSManagedObjectModel *managedObjectModel()
 {
     static NSManagedObjectModel *model = nil;
@@ -58,6 +60,8 @@ int main(int argc, const char * argv[])
         NSManagedObjectContext *context = managedObjectContext();
         
         // Custom code here...
+        STSStreet *street = [NSEntityDescription insertNewObjectForEntityForName:@"STSStreet" inManagedObjectContext:context];
+        street.streetName = @"Khreshchatik str";
         // Save the managed object context
         NSError *error = nil;
         if (![context save:&error]) {
