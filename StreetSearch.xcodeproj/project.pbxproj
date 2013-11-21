@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754080F1183EB5DE00F1B7F8 /* StreetSearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 754080F0183EB5DE00F1B7F8 /* StreetSearch.sqlite */; };
 		756E9AE11839404B000D19AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E9AE01839404B000D19AE /* Foundation.framework */; };
 		756E9AE31839404B000D19AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E9AE21839404B000D19AE /* CoreGraphics.framework */; };
 		756E9AE51839404B000D19AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E9AE41839404B000D19AE /* UIKit.framework */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		754080F0183EB5DE00F1B7F8 /* StreetSearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = StreetSearch.sqlite; sourceTree = "<group>"; };
 		7541FE48183C1B8B00E97FF7 /* StreetImporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StreetImporter.xcodeproj; path = StreetImporter/StreetImporter.xcodeproj; sourceTree = "<group>"; };
 		756E9ADD1839404B000D19AE /* StreetSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756E9AE01839404B000D19AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +151,7 @@
 				756E9AF71839404B000D19AE /* Images.xcassets */,
 				756E9B171839444B000D19AE /* Storyboard.storyboard */,
 				756E9AF41839404B000D19AE /* StreetSearch.xcdatamodeld */,
+				754080F0183EB5DE00F1B7F8 /* StreetSearch.sqlite */,
 				756E9AE91839404B000D19AE /* Supporting Files */,
 			);
 			path = StreetSearch;
@@ -277,6 +280,7 @@
 			files = (
 				756E9AED1839404B000D19AE /* InfoPlist.strings in Resources */,
 				756E9B181839444B000D19AE /* Storyboard.storyboard in Resources */,
+				754080F1183EB5DE00F1B7F8 /* StreetSearch.sqlite in Resources */,
 				756E9AF81839404B000D19AE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
