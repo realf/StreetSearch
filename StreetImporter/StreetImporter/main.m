@@ -60,8 +60,23 @@ int main(int argc, const char * argv[])
         NSManagedObjectContext *context = managedObjectContext();
         
         // Custom code here...
-        STSStreet *street = [NSEntityDescription insertNewObjectForEntityForName:@"STSStreet" inManagedObjectContext:context];
-        street.streetName = @"Khreshchatik str";
+        const int len = 255;
+        char buf[len] = {0};
+        int i = 0;
+        while (fgets(buf, len, stdin))
+        {
+            size_t length = strlen(buf);
+            if (length > 1)
+            {
+                buf[length - 1] = '\0';
+                printf("%ld %s\n", (long)i, buf);
+                i++;
+                
+                STSStreet *street = [NSEntityDescription insertNewObjectForEntityForName:@"STSStreet" inManagedObjectContext:context];
+                street.streetName = [NSString stringWithUTF8String:buf];
+            }
+        }
+        
         // Save the managed object context
         NSError *error = nil;
         if (![context save:&error]) {
