@@ -83,11 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				7541FE52183C1FD400E97FF7 /* STSStreet.h */,
-				7541FE56183C21CE00E97FF7 /* StreetSearch.xcdatamodeld */,
 				7541FE53183C1FD400E97FF7 /* STSStreet.m */,
 				7541FE3A183C1B2B00E97FF7 /* main.m */,
 				754080EF183EB17E00F1B7F8 /* streets.txt */,
 				7541FE41183C1B2B00E97FF7 /* StreetImporter.1 */,
+				7541FE56183C21CE00E97FF7 /* StreetSearch.xcdatamodeld */,
 				7541FE3C183C1B2B00E97FF7 /* Supporting Files */,
 			);
 			path = StreetImporter;
