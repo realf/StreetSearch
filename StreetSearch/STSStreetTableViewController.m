@@ -12,6 +12,7 @@
 @interface STSStreetTableViewController ()
 
 @property (strong, nonatomic) NSArray *streets;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -47,37 +48,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"STSStreet"
-                                              inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"streetName"
-                                                                   ascending:YES];
-    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"streetName contains[cd] 'днепр'"];
-    [fetchRequest setPredicate:predicate];
-    
-    NSError *error = nil;
-    NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    if (fetchedObjects == nil)
-    {
-        // Handle the error
-    }
-    
-    
-    self.streets = fetchedObjects;
-    
-    return [fetchedObjects count];
+    return [self.streets count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,6 +67,41 @@
     
     return cell;
 }
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    if (searchBar == self.searchBar)
+    {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"STSStreet"
+                                                  inManagedObjectContext:self.managedObjectContext];
+        [fetchRequest setEntity:entity];
+        
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"streetName"
+                                                                       ascending:YES];
+        NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+        [fetchRequest setSortDescriptors:sortDescriptors];
+        
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"streetName contains[cd] %@", self.searchBar.text];
+        [fetchRequest setPredicate:predicate];
+        
+        NSError *error = nil;
+        NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+        if (fetchedObjects == nil)
+        {
+            // Handle the error
+        }
+        
+        self.streets = fetchedObjects;
+        
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        [self.searchBar resignFirstResponder];
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.

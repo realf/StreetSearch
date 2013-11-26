@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STSStreetTableViewController : UITableViewController
+@interface STSStreetTableViewController : UITableViewController <UISearchBarDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
