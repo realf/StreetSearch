@@ -60,10 +60,10 @@ int main(int argc, const char * argv[])
         NSManagedObjectContext *context = managedObjectContext();
         
         // Custom code here...
-        const int len = 255;
-        char buf[len] = {0};
+        const int kLen = 255;
+        char buf[kLen] = {0};
         int i = 0;
-        while (fgets(buf, len, stdin))
+        while (fgets(buf, kLen, stdin))
         {
             size_t length = strlen(buf);
             if (length > 1)
